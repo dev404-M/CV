@@ -1,0 +1,76 @@
+h1{
+    position: relative;
+    font-size: 8rem;
+    padding-bottom: 6rem;
+}
+
+h2{
+    font-size: 5rem;
+}
+span{
+    font-family: 'Lato', sans-serif;
+    font-size: 7rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 9rem;
+    left: 0;
+}
+
+main a{
+    background-color: white;
+    color: #24385cfb;
+    padding: 2rem;
+    font-size: 2.2rem;
+    border-radius: 25px;
+    transition: .50s;
+}
+main a:hover{
+    background-color: #24385cfb;
+    color: white;
+}
+
+main a:nth-of-type(2){
+    margin-left: 3rem;
+    color: white;
+    background: rgb(91,113,152);
+    background: linear-gradient(-90deg, rgba(91,113,152,1) 0%, rgba(0,40,120,1) 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    transition: all 0.5s ease;
+
+}
+main a:nth-of-type(2):hover{
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+/*MENU BURGER
+@media screen and (max-width: 700px){
+    header nav ul{
+        gap: 5rem;
+        margin: 0;
+        padding: 1.5rem 2rem;
+    }
+
+    main h2.text-anim{
+        padding-bottom: 6rem;
+    }
+    main a.bottom-anim{
+        width: 80%;
+        margin: 5rem auto;
+        display: block;
+        text-align: center;
+    }
+}*/
+
+@media screen and (max-width: 600px){
+    main div{
+        display: flex;
+        flex-direction: column;
+    }
+    main div a{
+        margin: 3rem;
+        text-align: center;
+    }
+}

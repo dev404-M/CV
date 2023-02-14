@@ -1,0 +1,205 @@
+/*GLOBAL*/
+*{box-sizing: border-box;}
+html{font-size: 62.5%;}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: #121a2d;
+    color: white;
+    margin: 0;
+}
+
+a{text-decoration: none; color: white;}
+i{margin-right: 10px;}
+
+
+/*Titles*/
+h1{
+    font-size: 5rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 4rem;
+    letter-spacing: 4px;
+}
+h3{
+    font-size: 2.6rem;
+}
+/*Class*/
+.container{
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.space{
+    margin: 3rem;
+}
+
+.bottom-anim{
+    animation: bottom-anim 2s ease; 
+    position: relative;
+}
+
+.top-anim{
+    animation: top-anim 2s ease;
+    position: relative;
+}
+
+
+/*HEADER*/
+header{
+    font-family: 'Lato', sans-serif;
+}
+header i.fa-bars{
+    display: none;
+}
+header nav{
+    display: flex;
+    justify-content: right;
+  
+}
+header nav ul{
+    background-color: #24385cfb;
+    display: flex;
+    gap: 60px;
+    margin: 0;
+    padding: 1rem 2rem;
+    border-bottom-left-radius: 10px;
+    list-style: none;
+}
+
+nav a{
+    transition: .40s;
+    color: #7896ca;
+    font-size: 1.5rem;
+    
+}
+nav a:hover{
+    color: #cbd0d9;
+}
+
+/*ANIMATION*/
+
+@keyframes top-anim {
+    from{
+        top: -20rem;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes bottom-anim {
+    from{
+        bottom: -20rem;
+        opacity: 0;
+    }
+    to{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1400px){
+
+/*
+    header nav ul{
+        padding: 1.5rem 2rem;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 2.2rem;
+    }
+    li, p{
+        font-size: 2rem;
+    }
+*/
+}
+
+@media screen and (max-width: 700px){
+    .ul-visible{
+        visibility: visible;
+        position: absolute; 
+        opacity: 1;
+    }
+    header nav ul li{
+        padding: 2rem;
+    }
+    header ul li a{
+        font-size: 2.2rem;
+    }
+
+    header nav{
+        text-align: center;
+    }
+
+    header{
+        background-color: #24385cfb;
+        padding: 1rem;
+        text-align: right;
+        position: relative;
+    }
+    header nav ul{
+        visibility: hidden;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+        transition: 0.4s;
+        gap: 0;
+        top: 100%;
+        width: 100%;
+        right: 0;
+        z-index: 1;
+    }
+    header i.fa-bars{
+        display: block;
+        font-size: 3rem;
+        margin: 1rem;  
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 2.2rem;
+    }
+    li, p{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    li, p{
+        font-size: 1.5rem;
+    }
+}
