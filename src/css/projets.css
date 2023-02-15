@@ -41,8 +41,8 @@ article a:hover{
     
 }
 
-/*
-@media screen and (max-width: 1200px){
+
+@media screen and (max-width: 1300px){
     section{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -53,4 +53,4 @@ article a:hover{
         width: 100%;
         margin: 2rem 0;
     }
-}*/
+}
